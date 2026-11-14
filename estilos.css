@@ -1,0 +1,21 @@
+p {
+    color: rgb(58, 58, 58);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.link-especial {
+    color:gold;
+}
+
+#paragrafo1 {
+    color:blue;
+}
+
+.destaque {
+    color:rgb(99, 0, 0)
+}
+
+article p.destaque {
+    background-color:yellow !important;
+}
