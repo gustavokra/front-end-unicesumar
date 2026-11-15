@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 p {
     color: rgb(58, 58, 58);
     font-size: 14px;
@@ -18,4 +23,12 @@ p {
 
 article p.destaque {
     background-color:yellow !important;
+}
+
+.container {
+    width: 300px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box;
 }
