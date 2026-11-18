@@ -3,6 +3,44 @@
     padding: 0;
 }
 
+@media print {
+    body{
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width:800px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+nav ul {
+    margin: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+}
+
+#item1 {
+    order: 2;   
+}
+
+#item2 {
+    order: 1; 
+    align-self: baseline; 
+    /*flex-grow: 1; */
+    flex-shrink: 0;
+}
+
+#item3 {
+    order: 3;
+    align-self: flex-end;
+    flex-shrink: 0;  
+}
+
 p {
     color: rgb(58, 58, 58);
     font-size: 14px;
