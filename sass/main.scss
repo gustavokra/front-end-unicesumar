@@ -1,0 +1,49 @@
+:root {
+    --azul: blue;
+    --azul-transparente: rgba(0, 0, 255, 0.2);
+    --azul-escuro: rgb(0, 0, 131);
+}
+
+$azul: blue;
+$azul-transparente: rgba($azul, 0.2);
+
+h1 {
+    font-size: 30px;
+    color: red;
+}
+
+p {
+    font-size: 16px;
+    // color: var(--azul);
+    // color: darken($color: $azul, $amount: 20%);
+    color: lighten($color: $azul, $amount: 20%);
+}
+
+// Native Nesting + metodologia BEM
+.bloco {
+    .bloco__titulo {
+        line-height: 1;
+    }
+
+    .bloco__texto {
+        line-height: 1.2;
+        &.bloco__texto--modificado{
+            color: brown;
+        }
+    } 
+}
+
+// SASS Nesting + metodologia BEM
+.bloco {
+    &__titulo {
+        line-height: 1;
+    }
+
+    &__texto {
+        line-height: 1.2;
+        &__--modificado{
+            color: brown;
+        }
+    } 
+}
+

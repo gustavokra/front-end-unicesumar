@@ -1,0 +1,37 @@
+:root {
+  --azul: blue;
+  --azul-transparente: rgba(0, 0, 255, 0.2);
+  --azul-escuro: rgb(0, 0, 131);
+}
+
+h1 {
+  font-size: 30px;
+  color: red;
+}
+
+p {
+  font-size: 16px;
+  color: #6666ff;
+}
+
+.bloco .bloco__titulo {
+  line-height: 1;
+}
+.bloco .bloco__texto {
+  line-height: 1.2;
+}
+.bloco .bloco__texto.bloco__texto--modificado {
+  color: brown;
+}
+
+.bloco__titulo {
+  line-height: 1;
+}
+.bloco__texto {
+  line-height: 1.2;
+}
+.bloco__texto__--modificado {
+  color: brown;
+}
+
+/*# sourceMappingURL=style.css.map */
