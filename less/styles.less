@@ -1,0 +1,68 @@
+// Variáveis
+@cor-fundo: #f1f1f1;
+@cor-fonte: #333;
+@font-stack: "Montserrat", sans-serif;
+@borda: solid 2px rgb(255, 0, 0);
+
+body {
+    background-color: @cor-fundo;
+    color: @cor-fonte;
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: @font-stack;
+}
+
+// Mixins
+.borda-cima-baixo {
+    border-top: @borda;
+    border-bottom: @borda;
+    border-left: none;
+    border-right: none;
+}
+
+.botao {
+    padding: 10px 32px;
+    border-radius: 15px;
+    font-weight: 700;
+    background-color: @cor-fonte;
+    color: @cor-fundo;
+
+    .borda-cima-baixo ();
+}
+
+.intro {
+    font-size: 16px + 1mm;
+}
+
+//Native Nesting
+// Aninhamento/Nesting
+/*
+.container {
+    padding: 24;
+}
+
+.container h1 {
+    font-weight: 900;
+    line-height: 0.9;
+}
+
+.container p:hover {
+    color:red;
+} */
+
+.container {
+    padding: 24;
+
+    &:hover {
+        padding: 32px;
+    }
+
+    h1 {
+        font-weight: 900;
+        line-height: 0.9;
+    }
+
+    p:hover {
+        color: red;
+    }
+}
