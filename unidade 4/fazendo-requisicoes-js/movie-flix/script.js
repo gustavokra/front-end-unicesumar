@@ -1,4 +1,4 @@
-const APIKEY = "fac3b7f3"
+const APIKEY = "SUA API KEY"
 
 const url = `https://www.omdbapi.com/?apikey=${APIKEY}`;
 
